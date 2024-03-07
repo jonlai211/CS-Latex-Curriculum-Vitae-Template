@@ -1,0 +1,164 @@
+%-------------------------------------------------------------------------------
+% CS Latex CV Template
+%Based on "CS-Resume-LaTeX-Template" by Shengyuan Lu, under MIT License
+%Modified by Jonathan Lai, under MIT License
+%GitHub: https://github.com/jonlai211
+%-------------------------------------------------------------------------------
+
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[super]{nth}
+\usepackage{charter}
+\input{glyphtounicode}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	%-----------HEADING----------
+	\begin{center}
+		\textbf{\Huge \scshape Hu Wang} \\ \vspace{10pt}
+		\small \faPhone \hspace{1pt} (+douyu) 1667826 $ | $ 
+		\href{mailto:df.3mz.o@gmail.com}{\underline{\faEnvelope \hspace{1pt} df.3mz.o@gmail.com}} $ | $ 
+		\href{https://liquipedia.net/apexlegends/3Mz}{\underline{ \faHome \hspace{1pt} captain china}} $ | $ 
+		\href{https://www.douyu.com/1667826}{\underline{\faLinkedin \hspace{1pt} bellsprout}} $ | $
+		\href{https://space.bilibili.com/38979291 }{\underline{\faGithub \hspace{1pt} sandwich senbei}}
+	\end{center}
+	
+	%-----------EDUCATION-----------
+	\section{EDUCATION}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{University of Dreamfire}{\textit{Liverpool, Merseyside, UK}}
+	{Bachelor of Science in Computer Science}{\textit{Sep. 2020 – Present}}
+	\resumeItemListStart
+	\resumeItem{\textbf{GPA:} 5.8/4.0}
+	\resumeItem{\textbf{Relevant Courses:} Ash, Ballistic, Bangalore, Bloodhound, Catalyst, Caustic, Conduit, Crypto, Fuse, Gibraltar, Horizon, Lifeline, Loba, Mad Maggie, Mirage, Newcastle, Octane, Pathfinder, Rampart, Revenant, Seer, Wattson, Wraith}
+	\resumeItem{\textbf{Honors \& Awards:} First Prize in the Apex Legends Global Series 2088 Championship}
+	\resumeItem{\textbf{Skills:} Spark of Genius, Perimeter Security, Interception Pylon, Now You See Me, Psyche Out, Vanishing Act}
+	\resumeItem{\textbf{Publication:} [1] Roieee, Pite, \textbf{3Mz}, Feiju, Mingyue, et al. “Ai Da Da Bu Da Gun”. \textit{58th International Conference on Computer Vision and Pattern Recognition (ALGS 2023).} Accepted.}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	%-----------EXPERIENCE-----------
+	\section{RESEARCH EXPERIENCE}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Strategic Analysis and Leadership in Competitive Gaming Environments}{}
+	{Advisor: Dr. Bohan Chen and Chef Haipeng Wang, Zhejiang University}{Jul. 2096 – Aug. 2100}
+	\resumeItemListStart
+	\resumeItem{Achieved strategic advantage in intense final circles through humorous use of Bangalore's abilities of winding a trumpet for distraction and humorously deploying Gibraltar's Bubble on an unexpected tree to boost teammates' offensive capabilities, demonstrating tactical creativity.}
+	\resumeItem{Displayed mastery in role flexibility, acting as Seer for information gathering while standing, and providing shield defense as Newcastle when downed, effectively increasing survivability across offensive and defensive roles, often serving as the strategic pivot in team engagements.}
+	\resumeItemListEnd
+	\resumeSubheading
+	{Advanced Tactical Simulation for Esports Training}{}
+	{Advisor: Prof. Linjun Guo, Shanghai Jiao Tong University}{Sep. 2100 – Dec. 2104}
+	\resumeItemListStart
+	\resumeItem{Developed a high-fidelity simulation environment to test and refine strategic plays and character positioning, leading to a 15\% increase in team win rates in competitive settings.}
+	\resumeItem{Collaborated with a multidisciplinary team to integrate AI-driven analysis tools, providing real-time feedback on team dynamics and individual performance metrics.}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	%-----------PROJECTS-----------
+	\section{PROJECT EXPERIENCE}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{Green Gamer Augmentation System}}{Fall 2032}
+	\resumeItemListStart
+	\resumeItem{Enabled real-time display of battle royale game zones on personal computers during flights, enhancing strategic planning.}
+	\resumeItem{Implemented a feature to automatically display all players' positions on the map with a support for a 100m diameter X-ray vision, enhancing situational awareness.}
+	\resumeItem{Supported automatic bullet evasion to ensure no bullet hits the player, while also allowing the player's bullets to auto-track enemies, enhancing survivability and combat effectiveness.}
+	\resumeItemListEnd
+	\resumeProjectHeading
+	{\textbf{Virtual Reality Training Platform for Esports Athletes}}{Spring 2033}
+	\resumeItemListStart
+	\resumeItem{Designed and developed a VR platform to simulate competitive gaming environments for esports athletes, enhancing tactical training and spatial awareness.}
+	\resumeItem{Incorporated biometric feedback mechanisms to monitor player stress levels and adapt training scenarios in real-time, promoting mental resilience under pressure.}
+	\resumeItem{Facilitated collaborative development with professional gamers to ensure realistic scenarios, resulting in a 20\% improvement in team coordination and decision-making skills.}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	%-----------AWARDS-----------
+	\section{Recent Awards}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Son of Roieee}\hspace{1pt} (out of 2 guys) $|$ \emph{komorimio\_1010} \hspace*{\fill} July 1999 \\
+				\textbf{Best Shield Holder in Computer Game Science}\hspace{1pt} (1 of 50 defender worldwide) $|$ \emph{Captain American} \hspace*{\fill} December 2006 \\
+				\textbf{Eternal King of the Bayinbuluke Rally Race}\hspace{1pt} (\nth{1} place overall out of 20 teams) $|$ \emph{ASIA FESTIVAL 2024} \hspace*{\fill} February 2024 \\
+		}}
+	\end{itemize}
+	
+	%----------------------
+\end{document}
